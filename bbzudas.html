@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+
+<head>
+    <!-- Define os caracteres e permite a adaptação para celulares -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece na aba do navegador -->
+    <title>BBzudas Confeitaria</title>
+
+    <!-- Conecta o arquivo CSS ao HTML -->
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- Conecta o JavaScript e espera o HTML carregar para executar -->
+    <script src="bbzudas.js" defer></script>
+</head>
+
+<!-- Ao abrir o site, mostra automaticamente a seção de produtos -->
+<body onload="mostrar('produtos')">
+
+    <!-- CABEÇALHO DO SITE -->
+    <header class="partedecima">
+
+        <!-- Nome da confeitaria -->
+        <h1 class="titulopartedecima">BBzudas Confeitaria</h1>
+
+        <!-- Botões que permitem navegar entre as seções -->
+        <button onclick="mostrar('produtos')" class="botao">
+            Nossas delícias
+        </button>
+
+        <button onclick="mostrar('cardapio')" class="botao">
+            Cardápio
+        </button>
+
+        <button onclick="mostrar('pedido')" class="botao">
+            Peça agora!
+        </button>
+
+    </header>
+
+    <!-- BANNER PRINCIPAL DO SITE -->
+    <div class="banner">
+
+        <!-- Nome da confeitaria em destaque -->
+        <h1 class="titulo">BBzudas Confeitaria</h1>
+
+        <!-- Frase de apresentação -->
+        <p class="frase">Doces feitos em casa</p>
+
+    </div>
+
+    <!-- ÁREA QUE CONTÉM TODAS AS SEÇÕES -->
+    <main id="conteudos">
+
+        <!-- SEÇÃO 1: PRODUTOS -->
+        <section class="conteudo" data-categoria="produtos">
+
+            <h1>Nossas delícias</h1>
+
+            <!-- Grid que organiza os produtos em colunas -->
+            <div class="cartoes">
+
+                <!-- Cada parágrafo representa um produto, com imagem, nome e preço -->
+
+                <p class="doces">
+                    <img src="bolo1.jpg" class="img" alt="Bolo de brigadeiro">
+                    <br>Bolo de brigadeiro - R$ 99,90
+                </p>
+
+                <p class="doces">
+                    <img src="bolo2.png" class="img" alt="Bolo de cenoura">
+                    <br>Bolo de cenoura com cobertura - R$ 89,90
+                </p>
+
+                <p class="doces">
+                    <img src="bolo3.avif" class="img" alt="Bolo de coco">
+                    <br>Bolo de coco - R$ 99,90
+                </p>
+
+                <p class="doces">
+                    <img src="bolo3.jpg" class="img" alt="Bolo de morango">
+                    <br>Bolo de morango com chocolate - R$ 109,90
+                </p>
+
+                <p class="doces">
+                    <img src="cupcake.jpg" class="img" alt="Cupcake de morango">
+                    <br>Cupcake de morango - R$ 29,50
+                </p>
+
+                <p class="doces">
+                    <img src="cupcake1.jpg" class="img" alt="Cupcake de baunilha">
+                    <br>Cupcake de baunilha - R$ 29,50
+                </p>
+
+                <p class="doces">
+                    <img src="cupcake2.jpg" class="img" alt="Cupcake de marshmallow">
+                    <br>Cupcake de marshmallow - R$ 29,50
+                </p>
+
+                <p class="doces">
+                    <img src="cupcake3.webp" class="img" alt="Cupcake de chocolate">
+                    <br>Cupcake de chocolate - R$ 29,50
+                </p>
+
+                <p class="doces">
+                    <img src="cookie1.jpg" class="img" alt="Cookie de Oreo">
+                    <br>Cookie de Oreo - R$ 15,60
+                </p>
+
+                <p class="doces">
+                    <img src="cookie2.jpg" class="img" alt="Cookie de morango">
+                    <br>Cookie de morango - R$ 15,60
+                </p>
+
+                <p class="doces">
+                    <img src="cookie3.jpg" class="img" alt="Cookie">
+                    <br>Cookie - R$ 15,60
+                </p>
+
+                <p class="doces">
+                    <img src="cookie4.jpg" class="img" alt="Cookie fantasia">
+                    <br>Cookie fantasia - R$ 15,60
+                </p>
+
+                <p class="doces">
+                    <img src="brigadeiro.jpg" class="img" alt="Brigadeiro de ninho com Nutella">
+                    <br>Brigadeiro de ninho com Nutella (50 un.) - R$ 60,50
+                </p>
+
+                <p class="doces">
+                    <img src="brigadeiro1.webp" class="img" alt="Brigadeiro meio amargo">
+                    <br>Brigadeiro meio amargo (50 un.) - R$ 60,50
+                </p>
+
+                <p class="doces">
+                    <img src="brigadeiro2.webp" class="img" alt="Brigadeiro tradicional">
+                    <br>Brigadeiro (50 un.) - R$ 60,50
+                </p>
+
+                <p class="doces">
+                    <img src="brigadeiro3.webp" class="img" alt="Brigadeiro branco">
+                    <br>Brigadeiro de chocolate branco (50 un.) - R$ 60,50
+                </p>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: CARDÁPIO E TABELA DE PREÇOS -->
+        <section class="conteudo" data-categoria="cardapio">
+
+            <h1>Nossa Tabela de Preços</h1>
+
+            <p class="subtitulo">Confira nossos valores</p>
+
+            <!-- Tabela que apresenta os preços dos produtos -->
+            <table>
+
+                <!-- Cabeçalho da tabela -->
+                <thead>
+                    <tr>
+                        <th>Produtos</th>
+                        <th>Preços</th>
+                    </tr>
+                </thead>
+
+                <!-- Corpo da tabela -->
+                <tbody>
+
+                    <tr>
+                        <td>Bolos</td>
+                        <td class="preco">A partir de R$ 89,90</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cupcakes</td>
+                        <td class="preco">R$ 29,50</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cookies</td>
+                        <td class="preco">R$ 15,60</td>
+                    </tr>
+
+                    <tr>
+                        <td>Brigadeiros (50 unidades)</td>
+                        <td class="preco">R$ 60,50</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </section>
+
+        <!-- SEÇÃO 3: FORMULÁRIO DE PEDIDOS -->
+        <section class="conteudo" data-categoria="pedido">
+
+            <!-- Caixa que organiza os campos do formulário -->
+            <div class="area-pedido">
+
+                <h2 class="pedidos">Peça já!</h2>
+
+                <!-- Campo para escolher o produto -->
+                <label for="opcao" class="pedidos">
+                    Escolha o produto que deseja comprar:
+                </label>
+
+                <select id="opcao" class="campo">
+                    <option value="">Selecione um produto</option>
+                    <option value="bolo">Bolo</option>
+                    <option value="cupcake">Cupcake</option>
+                    <option value="cookie">Cookie</option>
+                    <option value="brigadeiro">Brigadeiro (50 unidades)</option>
+                </select>
+
+                <!-- Campo para informar a quantidade -->
+                <label for="qtd" class="pedidos">
+                    Insira a quantidade:
+                </label>
+
+                <input
+                    class="campo"
+                    type="number"
+                    id="qtd"
+                    min="1"
+                    step="1"
+                    placeholder="Digite a quantidade"
+                >
+
+                <!-- Campo para escolher a forma de pagamento -->
+                <label for="pagamento" class="pedidos">
+                    Qual é a forma de pagamento?
+                </label>
+
+                <select id="pagamento" class="campo">
+                    <option value="">Selecione o pagamento</option>
+                    <option value="pix">Pix</option>
+                    <option value="debito">Débito</option>
+                    <option value="credito">Crédito</option>
+                </select>
+
+                <!-- Botão que executa a função pedir() no JavaScript -->
+                <button type="button" class="botao botao-pedido" onclick="pedir()">
+                    Fazer pedido
+                </button>
+
+                <!-- Espaço onde o JavaScript mostrará o resultado -->
+                <div id="resultado" class="resultado" aria-live="polite"></div>
+
+                <!-- Informações de contato da confeitaria -->
+                <p class="contato">
+                    Formas de contato:<br>
+                    Email: bbzudas.sweets@gmail.com<br>
+                    Telefone: (61) 99656565
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

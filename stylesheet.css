@@ -1,0 +1,292 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #eec4d8;
+    margin: 0;
+}
+
+
+/* PARTE SUPERIOR DO SITE */
+
+.partedecima {
+    min-height: 60px;
+    width: 100%;
+    background-color: #fed8ff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+/* Nome da confeitaria no cabeçalho */
+.titulopartedecima {
+    margin-right: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: #000000;
+}
+
+
+/* BOTÕES */
+
+.botao {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: white;
+    color: #000000;
+    border: none;
+    border-radius: 15px;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.botao:hover {
+    background-color: #f387bb;
+    color: white;
+}
+
+
+/* BANNER */
+
+.banner {
+    background-image: url('bbzudasconfeitaria.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 250px;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+/* Título principal */
+.titulo {
+    text-align: center;
+    color: white;
+    padding: 40px 10px;
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Frase do banner */
+.frase {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* TÍTULOS E CONTEÚDOS */
+
+h1 {
+    text-align: center;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+    margin: 20px 0;
+}
+
+/* Seções que são controladas pelo JavaScript */
+.conteudo {
+    display: none;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+/* PRODUTOS */
+
+/* Organização dos produtos em colunas */
+.cartoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Nome e preço dos doces */
+.doces {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: large;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* Imagens dos produtos */
+.img {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito nas imagens */
+.img:hover {
+    transform: scale(1.04);
+}
+
+
+/* CARDÁPIO */
+
+/* Subtítulo da tabela */
+.subtitulo {
+    text-align: center;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #1d0017;
+    margin: 15px;
+}
+
+/* Tabela ocupando toda a largura da tela */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    text-align: center;
+}
+
+/* Cabeçalho da tabela */
+th {
+    background-color: #f387bb;
+    color: #000000;
+    padding: 16px;
+    text-align: center;
+}
+
+/* Células da tabela */
+td {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+    color: #444;
+    text-align: center;
+}
+
+/* Efeito ao passar o mouse nas linhas */
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Destaque dos preços */
+.preco {
+    color: #f387bb;
+    font-weight: bold;
+}
+
+
+/* ÁREA DE PEDIDOS */
+
+/* Caixa branca do formulário */
+.area-pedido {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Textos do formulário */
+.pedidos {
+    color: #000000;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Campos de preenchimento */
+.campo {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #eec4d8;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fffafa;
+}
+
+/* Destaque ao selecionar um campo */
+.campo:focus {
+    outline: none;
+    border: 2px solid #f387bb;
+}
+
+/* Botão de fazer pedido */
+.botao-pedido {
+    background-color: #f387bb;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Efeito do botão de pedido */
+.botao-pedido:hover {
+    background-color: #d85c99;
+}
+
+
+/* RESULTADO DO PEDIDO */
+
+/* Área onde aparece o resultado do cálculo */
+.resultado {
+    background-color: #fff0f6;
+    border-radius: 10px;
+    padding: 15px;
+    color: #000000;
+    text-align: left;
+    line-height: 1.8;
+}
+
+/* Esconde a área enquanto estiver vazia */
+.resultado:empty {
+    display: none;
+}
+
+/* Títulos do resultado */
+.resultado h3 {
+    color: #d85c99;
+    margin-bottom: 10px;
+}
+
+/* Textos do resultado */
+.resultado p {
+    color: #000000;
+    font-size: 16px;
+    padding: 0;
+    text-align: left;
+}
+
+
+/* CONTATO */
+
+.contato {
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.8;
+    padding: 15px;
+}
